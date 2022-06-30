@@ -93,7 +93,8 @@ function configure_node() {
     sed -i '14i\  --ws \\' "${BOR_START_SH}"
     sed -i '15i\  --wss.addr '0.0.0.0' \\' "${BOR_START_SH}"
     sed -i '16i\  --wss.origins="*" \\' "${BOR_START_SH}"
-  elif ["${option}" == "rpc" ]; then
+  fi
+  if [ "${option}" == "rpc" ]; then
   echo "testing inside wss loop" >> /var/log/test.log
     if ! grep -q bootnodes "${BOR_START_SH}"; then
         echo "testing inside bootnodes rpc block" >> /var/log/test.log
