@@ -139,7 +139,7 @@ function polygonctl() {
 }
 
 function usage() {
-  echo "Usage: $0 {-n <mainnet|mumbai> -m <archive|fullnode> -s <snapshot|from_scratch> -t <option> -p <port-number>}" 1>&2
+  echo "Usage: $0 {-n <mainnet|mumbai> -m <archive|fullnode> -s <snapshot|from_scratch> -t <wss|rpc> -p <port-number>}" 1>&2
   exit 1
 }
 
