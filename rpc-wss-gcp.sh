@@ -197,7 +197,6 @@ if ((p > 65535 || p < 1));then
   usage
 fi
 
-echo "${t}" >> /var/log/test.log
 check_root
 check_os
 install_dependencies
